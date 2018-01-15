@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1515979604 source:d:\programozas\5het\nincsenekegyformak\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<stdbool.h>
+
