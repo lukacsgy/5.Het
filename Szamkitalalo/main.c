@@ -7,7 +7,7 @@ int main(void){
 
     srand(time(0));
 
-    int szam = rand()%10+1;
+    int szam = rand()%1000+1;
     printf(" Melyik szamra gondoltam?\n");
     scanf("%d", &tip);
 
