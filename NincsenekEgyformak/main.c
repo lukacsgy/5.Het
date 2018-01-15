@@ -9,16 +9,16 @@ int main(void){
 
     srand(time(0));
 
-    printf("Mennyi veletlen szam legyen(max 100) ?");
+    printf("Mennyi veletlen szam legyen(max 100):");
     scanf("%d", &N);
 
     for (i = 0; i < N; i++){
         do{
-            szam = rand()%10+1;
+            szam = rand()%100+1;
 
             egyforma = false;
             for (j = 0; j < i; j++){
-                if(szamok[j] == szamok){
+                if(szamok[j] == szam){
                     egyforma = true;
                 }
             }
@@ -27,6 +27,8 @@ int main(void){
     szamok[i] = szam;
     printf("%3d, ", szamok[i]);
     }
+
+
 
     return 0;
 }
