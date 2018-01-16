@@ -17,7 +17,6 @@ int hatvany(int szam, int kitevo){
     for(i = 0; i < kitevo; i++){
         eredmeny *= szam;
     }
-
     return(eredmeny);
 }
 
