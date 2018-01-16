@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1516110299 source:d:\programozas\5het\elojelek\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
