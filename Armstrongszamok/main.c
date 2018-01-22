@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int szamjegy(int szam){
+int mekkora(int szam){
     int db = 0;
 
     while(szam > 0){
@@ -11,38 +11,31 @@ int szamjegy(int szam){
     return(db);
 }
 
-int hatvany(int szam, int kitevo){
+int hatvany(int szam, int ertek){
     int i, eredmeny = 1;
 
-    for(i = 0; i < kitevo; i++){
+    for(i = 0; i < ertek; i++){
         eredmeny *= szam;
     }
     return(eredmeny);
 }
 
 int main(void){
-    int i, j, szam, kitevo;
+    int i;
 
-    for (i = 1; i < 10000; i++){
-
-        kitevo = szamjegy(i);
-        int alap = i;
+    printf("Armstrong szamok: ");
+    for (i = 0; i < 10000; i++){
+        int kitevo = mekkora(i);
         int osszeg = 0;
-        int db = 0;
-        int szj[kitevo];
+        int szam = i;
 
-        while(i > 0){
-            szj[db] = i % 10;
-            i /= 10;
-            db++;
+        while (szam > 0){
+            osszeg += hatvany(szam % 10, kitevo);
+            szam /= 10;
         }
-
-        for(j = 0; j < kitevo; j++){
-            osszeg += hatvany(szj[j], kitevo);
+        if (i == osszeg){
+            printf("%d, ", osszeg);
         }
-
-        if (alap == osszeg){printf("%5d," ,osszeg);}
-
     }
 
     return 0;
