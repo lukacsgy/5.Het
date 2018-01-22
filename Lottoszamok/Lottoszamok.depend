@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1516107924 source:d:\programozas\5het\lottoszamok\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
