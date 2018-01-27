@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1517059125 source:d:\programozas\5het\kartyapaklii\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
